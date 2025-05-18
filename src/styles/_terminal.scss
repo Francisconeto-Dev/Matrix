@@ -1,0 +1,25 @@
+.terminal {
+  font-family: 'Courier New', monospace;
+  background: transparent;
+  color: #0f0;
+  padding: 2rem;
+  text-shadow: 0 0 6px #0f0;
+  border-bottom: 1px solid #0f0;
+  animation: fadeIn 1s ease-in;
+
+  p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,73 @@
+@use 'variaveis';
+
+body.tema-azul {
+  background-color: variaveis.$azul-bg;
+
+  .header__logo,
+  .header__link,
+  .filmes__titulo,
+  h2,
+  h3,
+  p {
+    color: variaveis.$azul-texto;
+  }
+  .filme {
+    border: 1px solid variaveis.$azul-texto;
+    h3 {
+      color: variaveis.$azul-texto;
+    }
+  }
+}
+body.tema-vermelho {
+  background-color: variaveis.$vermelho-bg;
+
+  .header__logo,
+  .header__link,
+  .filmes__titulo,
+  h2,
+  h3,
+  p {
+    color: variaveis.$vermelho-texto;
+  }
+  .filme {
+    border: 1px solid variaveis.$vermelho-texto;
+    h3 {
+      color: variaveis.$vermelho-texto;
+    }
+  }
+}
+
+.mensagem-pilula {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #0f0;
+  padding: 1rem 2rem;
+  border: 1pc solid #0f0;
+  z-index: 1000;
+  font-size: 1.2rem;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.mensagem-pilula.fade-out {
+  opacity: 0;
+}
+
+.agent-smith {
+  position: fixed;
+  bottom: 0;
+  right: -400px;
+  height: 500px;
+  z-index: 999;
+  transition: right 1s ease;
+
+  &.show {
+    right: 20px;
+  }
+  &.hidden {
+    display: none;
+  }
+}

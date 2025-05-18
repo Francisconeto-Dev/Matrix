@@ -1,0 +1,22 @@
+@use 'variaveis';
+
+.sobre {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &__titulo {
+    font-size: 2rem;
+    color: variaveis.$verde-neon;
+    margin-bottom: 1.5rem;
+  }
+
+  &__texto {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: variaveis.$verde-matrix;
+    text-shadow: 0 0 5px #0f0;
+  }
+}

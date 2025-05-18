@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Universo Matrix</title>
+    <link rel="stylesheet" href="./dist/css/main.css" />
+  </head>
+  <img
+    src="./dist/images/smith.png"
+    alt="Agent Smith"
+    class="agent-smith hidden"
+  />
+  <body>
+    <canvas id="matrix"></canvas>
+    <audio id="matrix-audio" autoplay hidden>
+      <source
+        src="./dist/audio/matrix-sound.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <section class="terminal">
+      <p>$ wake up, Neo...</p>
+      <p>$ the Matrix has you...</p>
+      <p>$ follow the white rabbit.</p>
+    </section>
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__logo">The Matrix</h1>
+      </div>
+      <nav class="header__nav">
+        <a href="#" class="header__link"
+          >Entrar na Matrix</a
+        >
+      </nav>
+    </header>
+    <section class="choice">
+      <h2>A realidade é uma ilusão</h2>
+      <p>Escolha sua pílula:</p>
+      <div class="pills">
+        <button class="pill pill--blue">Pílula Azul</button>
+        <button class="pill pill--red">
+          Pílula Vermelha
+        </button>
+      </div>
+    </section>
+    <section class="filmes">
+      <h2 class="filmes__titulo">Universo Matrix</h2>
+      <div class="filmes__grid">
+        <div class="filme">
+          <img
+            src="./dist/images/Matrix-filmes-capas/matrix1.jpg"
+            alt="Matrix"
+          />
+          <h3>Matrix</h3>
+        </div>
+        <div class="filme">
+          <img
+            src="./dist/images/Matrix-filmes-capas/matrix2.jpg"
+            alt="Matrix Reloaded"
+          />
+          <h3>Matrix Reloaded</h3>
+        </div>
+        <div class="filme">
+          <img
+            src="./dist/images/Matrix-filmes-capas/matrix3.jpg"
+            alt="Matrix Revolutions"
+          />
+          <h3>Matrix Revolutions</h3>
+        </div>
+        <div class="filme">
+          <img
+            src="./dist/images/Matrix-filmes-capas/matrix4.jpg"
+            alt="Matrix Resurrections"
+          />
+
+          <h3>Matrix Resurrections</h3>
+        </div>
+      </div>
+    </section>
+    <div class="quote-matrix">
+      <p>"Ignorance is bliss." – Cypher</p>
+    </div>
+    <div class="glitch-bar"></div>
+
+    <section class="atores">
+      <h2 class="atores__titulo">Elenco Principal</h2>
+      <div class="atores__grid">
+        <div class="ator">
+          <img
+            src="./dist/images/atores/Keanu Reeves.jpg"
+            alt="Keanu Reeves"
+          />
+          <h3>Keanu Reeves</h3>
+          <p>Neo</p>
+          <img
+            class="ator__personagem"
+            src="./dist/images/personagens/neo.png"
+            alt="Neo"
+          />
+        </div>
+
+        <div class="ator" data-personagem="trinity.png">
+          <img
+            src="./dist/images/atores/Carrie-Anne Moss.jpg"
+            alt="Carrie-Anne Moss"
+          />
+          <h3>Carrie-Anne Moss</h3>
+          <p>Trinity</p>
+          <img
+            class="ator__personagem"
+            src="./dist/images/personagens/trinity.png"
+            alt="Neo"
+          />
+        </div>
+        <div class="ator" data-personagem="morpheus.png">
+          <img
+            src="./dist/images/atores/Laurence Fishburne.jpg"
+            alt="Laurence Fishburne"
+          />
+          <h3>Laurence Fishburne</h3>
+          <p>Morpheus</p>
+          <img
+            class="ator__personagem"
+            src="./dist/images/personagens/morpheus.png"
+            alt="Neo"
+          />
+        </div>
+        <div class="ator" data-personagem="smith.png">
+          <img
+            src="./dist/images/atores/Hugo Weaving.jpg"
+            alt="Hugo Weaving"
+          />
+          <h3>Hugo Weaving</h3>
+          <p>Agente Smith</p>
+          <img
+            class="ator__personagem"
+            src="./dist/images/personagens/smith.png"
+            alt="Smith"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="sobre">
+      <h2 class="sobre__titulo">O que é a Matrix</h2>
+      <p class="sobre__texto">
+        Matrix é uma simulação criada por máquinas para
+        controlar a mente dos humanos. Dentro dela, os seres
+        humanos vivem uma realidade ilusória enquanto seus
+        corpos reais são usados como fonte de energia. O
+        filme mistura filosofia, ação e ficção científica,
+        levantando questionamentos sobre liberdade,
+        identidade e a natureza da realidade.
+      </p>
+    </section>
+    <div class="glitch-bar"></div>
+    <section class="cenas">
+      <h2 class="cenas__titulo">Cenas dos Filmes</h2>
+
+      <div class="cenas__tabs">
+        <button class="tab ativo" data-tab="monstro">
+          Matrix Clássico
+        </button>
+        <button class="tab" data-tab="rua10">
+          Mundo Real
+        </button>
+        <button class="tab" data-tab="paradoxo">
+          Glitches da Matrix
+        </button>
+      </div>
+
+      <div class="cenas__galeria" data-content="monstro">
+        <img
+          src="./dist/images/cenas/cena1.jpg"
+          alt="Cena 1"
+        />
+        <img
+          src="./dist/images/cenas/cena2.jpg"
+          alt="Cena 2"
+        />
+        <img
+          src="./dist/images/cenas/cena3.jpeg"
+          alt="Cena 3"
+        />
+      </div>
+
+      <div
+        class="cenas__galeria hidden"
+        data-content="rua10"
+      >
+        <img
+          src="./dist/images/cenas/cena4.jpg"
+          alt="Cena 4"
+        />
+        <img
+          src="./dist/images/cenas/cena5.jpg"
+          alt="Cena 5"
+        />
+        <img
+          src="./dist/images/cenas/cena6.jpeg"
+          alt="Cena 6"
+        />
+      </div>
+
+      <div
+        class="cenas__galeria hidden"
+        data-content="paradoxo"
+      >
+        <img
+          src="./dist/images/cenas/cena7.jpeg"
+          alt="Cena 7"
+        />
+        <img
+          src="./dist/images/cenas/cena8.jpg"
+          alt="Cena 8"
+        />
+        <img
+          src="./dist/images/cenas/cena9.jpg"
+          alt="Cena 9"
+        />
+      </div>
+    </section>
+
+    <section class="curiosidades">
+      <h2 class="curiosidades__titulo">
+        Curiosidades sobre Matrix
+      </h2>
+      <ul class="curiosidades__lista">
+        <li>
+          ☯️ A ideia do filme foi inspirada em filosofias
+          orientais e questionamentos de Descartes.
+        </li>
+        <li>
+          🕶️ Os óculos escuros refletem a dualidade entre
+          mundos real e virtual.
+        </li>
+        <li>
+          📉 Os códigos verdes da Matrix são na verdade
+          receitas de sushi invertidas.
+        </li>
+        <li>
+          🕳️ O “rabbit hole” (toca do coelho) é referência
+          direta a *Alice no País das Maravilhas*.
+        </li>
+        <li>
+          👩‍💻 Os irmãos Wachowski, diretores, escreveram o
+          roteiro pensando em uma trilogia desde o início.
+        </li>
+      </ul>
+    </section>
+    <div class="trailer">
+      <iframe
+        width="100%"
+        height="1000"
+        src="https://www.youtube.com/embed/vKQi3bBA1y8"
+        title="Trailer Matrix"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <section class="curiosidades">
+      <h2 class="curiosidades__titulo">
+        Segredos da Simulação
+      </h2>
+
+      <div class="acordeao">
+        <button class="acordeao__cabecalho">
+          Qual a inspiração visual por trás do código da
+          Matrix?
+          <span>+</span>
+        </button>
+        <div class="acordeao__conteudo">
+          O código foi inspirado em receitas de sushi
+          japonesas, escaneadas de um livro de culinária.
+          Sim, é sério!
+        </div>
+      </div>
+
+      <div class="acordeao">
+        <button class="acordeao__cabecalho">
+          Quantos anos levou para filmar o primeiro filme?
+          <span>+</span>
+        </button>
+        <div class="acordeao__conteudo">
+          As filmagens levaram 118 dias, mas os treinamentos
+          com o elenco duraram 4 meses antes de tudo
+          começar.
+        </div>
+      </div>
+
+      <div class="acordeao">
+        <button class="acordeao__cabecalho">
+          Os irmãos Wachowski se inspiraram em quê?
+          <span>+</span>
+        </button>
+        <div class="acordeao__conteudo">
+          Eles misturaram filosofia, animes como Ghost in
+          the Shell, cyberpunk e teoria da simulação. Matrix
+          é puro conceito.
+        </div>
+      </div>
+    </section>
+    <h2 class="typewriter">There is no spoon.</h2>
+
+    <footer class="footer">
+      <blockquote>
+        “Tudo o que ofereço é a verdade. Nada mais.”<br />
+        <span>– Morpheus</span>
+      </blockquote>
+      <p>
+        © 2025 Universo Matrix. Todos os direitos
+        reservados.
+      </p>
+      <p>Desenvolvido por Francisco Neto • Projeto EBAC</p>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
+  </body>
+</html>

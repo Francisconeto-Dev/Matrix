@@ -1,0 +1,47 @@
+@use 'variaveis';
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid variaveis.$verde-neon;
+  color: variaveis.$verde-matrix;
+  font-size: 0.9rem;
+  text-shadow: 0 0 4px variaveis.$verde-neon;
+  margin-top: 4rem;
+
+  p {
+    margin: 0.5rem 0;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: variaveis.$verde-neon;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 6px variaveis.$verde-neon;
+
+  span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: variaveis.$verde-matrix;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 0.85rem;
+    text-align: center;
+
+    blockquote {
+      font-size: 1rem;
+    }
+  }
+
+  .typewriter {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+}

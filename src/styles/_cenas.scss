@@ -1,0 +1,80 @@
+@use 'variaveis';
+
+.cenas {
+  padding: 4rem 2rem;
+  text-align: center;
+
+  &__titulo {
+    font-size: 2.5rem;
+    color: variaveis.$verde-neon;
+    margin-bottom: 2rem;
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    .tab {
+      background: none;
+      border: none;
+      font-size: 1rem;
+      color: #fff;
+      border-bottom: 2px solid transparent;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: border 0.3s;
+
+      &.ativo {
+        border-color: variaveis.$verde-neon;
+        color: variaveis.$verde-neon;
+      }
+    }
+  }
+
+  &__galeria {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    );
+    gap: 1.5rem;
+    padding: 0 2rem;
+
+    img {
+      width: 100%;
+      height: 400px;
+      max-width: 700px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s;
+      box-shadow: 0 0 10px #0f0;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cenas__tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .cenas__galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .cenas__galeria img {
+    width: 100%;
+    height: auto;
+  }
+}
