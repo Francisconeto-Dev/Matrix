@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
+// const imagemin = require('gulp-imagemin');
 
 function styles() {
   return gulp
@@ -17,12 +17,11 @@ function scripts() {
     .pipe(gulp.dest('./dist/js'));
 }
 
-//function images() {
-//return gulp
-//.src('./src/images/**/*')
-//.pipe(imagemin())
-//.pipe(gulp.dest('./dist/images'));
-//}
+function images() {
+  return gulp
+    .src('./src/images/**/*')
+    .pipe(gulp.dest('./dist/images'));
+}
 
 function audio() {
   return gulp
