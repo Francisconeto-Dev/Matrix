@@ -17,12 +17,13 @@ function scripts() {
     .pipe(gulp.dest('./dist/js'));
 }
 
-function images() {
-  return gulp
-    .src('./src/images/**/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('./dist/images'));
-}
+//function images() {
+//return gulp
+//.src('./src/images/**/*')
+//.pipe(imagemin())
+//.pipe(gulp.dest('./dist/images'));
+//}
+
 function audio() {
   return gulp
     .src('src/audio/*')
